@@ -85,7 +85,7 @@ class ProjectAgent:
         Load a trained model from a file.
         """
         device = torch.device('cpu')
-        self.path = os.getcwd() + "/best_model_dqn.pt"
+        self.path = os.getcwd() + "src/best_model_dqn.pt"
         print(f"Loading model from: {self.path}")
         self.model = self.dqn({}, device)
         self.model.load_state_dict(torch.load(self.path, map_location=device))
