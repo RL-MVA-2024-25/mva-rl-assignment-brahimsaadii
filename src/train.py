@@ -8,7 +8,6 @@ from copy import deepcopy
 import numpy as np
 import torch
 import torch.nn as nn
-from tqdm import trange
 
 from evaluate import evaluate_HIV
 
